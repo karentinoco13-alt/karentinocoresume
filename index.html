@@ -349,6 +349,36 @@ h3{font-family:var(--f-body);font-weight:600}
 .quote{font-size:20px;font-style:italic;font-weight:500}
 .lead-q{font-size:20px;font-weight:500}
 .cover b{font-family:var(--f-display);text-transform:none;letter-spacing:0;font-size:16px}
+
+/* ===== Flat: no shadows, no bubbles around titles or labels ===== */
+*{text-shadow:none!important}
+.avatar,.cv,.logo,.entry.co .logo,.pic,.btn,.tabs a,.lang button{box-shadow:none!important}
+.tagline{text-shadow:none!important}
+/* section titles: plain headings, not boxed */
+.pbanner{background:none!important;border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0;padding:0 0 12px;margin-bottom:18px}
+.pbanner h2{color:var(--ink)!important;font-size:24px}
+/* badges, skills, tags, status: plain text instead of pills */
+.highlights{gap:6px 0;margin-top:14px}
+.chip{background:none!important;padding:0;border-radius:0;color:var(--muted)!important;font-size:14.5px;font-weight:500}
+.highlights .chip:not(:last-child)::after{content:"·";margin:0 10px;color:var(--line)}
+.skills{gap:4px 0}
+.skill{background:none!important;border:0!important;border-radius:0;padding:0;font-weight:400;color:var(--ink)!important}
+.skill:not(:last-child)::after{content:"·";margin:0 10px;color:var(--muted)}
+.tag,.tabpanel .tag{background:none!important;padding:0;border-radius:0;color:var(--muted)!important;font-weight:600}
+.status,.tabpanel .status{background:none!important;padding:0;margin-left:8px;color:var(--muted)!important;font-style:italic;font-weight:500}
+.step span{border:0!important;width:auto;height:auto;display:inline}
+.step span::after{content:"."}
+.count{background:none}
+.okbox{background:none!important;border:0!important;border-left:3px solid var(--ok)!important;border-radius:0;padding:4px 0 4px 14px}
+.pic{background:none!important;width:auto;height:auto}
+.pic svg{stroke:var(--accent)!important;width:20px;height:20px}
+
+/* selected tab / language: underline instead of a filled bubble */
+.tabs a,.lang button{border-radius:0!important}
+.tabs a[aria-selected="true"]{background:none!important;color:#fff!important;box-shadow:inset 0 -3px 0 var(--gold)!important}
+.lang button[aria-pressed="true"]{background:none!important;color:#fff!important;box-shadow:inset 0 -3px 0 var(--gold)!important}
+#p-experience .entry.co .role::before,#p-experience .entry.co .role[style*="--rc"]::before{box-shadow:none!important}
+.btn{border-radius:6px}
 </style>
 
 </head>
