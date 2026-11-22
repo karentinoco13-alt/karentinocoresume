@@ -4,6 +4,6 @@ An interactive résumé web app: experience, projects, writing and certification
 
 **Live site:** https://karentinoco13-alt.github.io/karentinocoresume/
 
-It is a single `index.html` file with no build step, no cookies, no analytics and no tracking.
+It is a single `index.html` file with no build step and no cookies. Visits are counted with GoatCounter, a cookie-free counter that collects no personal data.
 
 © 2026 Karen Tinoco. Licensed under PolyForm Noncommercial 1.0.0: free to view, share and adapt for non-commercial use, with credit. Commercial use by permission only.
