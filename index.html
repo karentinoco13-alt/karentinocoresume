@@ -8,7 +8,7 @@
 <title>Karen Tinoco</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: one profile column of stacked section panels under a banner hero, LinkedIn-style, in Karen's own navy and signal blue */
 :root{
@@ -289,6 +289,66 @@ footer.site p{max-width:1280px}
   .agroups{grid-template-columns:repeat(3,minmax(0,1fr))}
   .about p,.lead-q{max-width:80ch}
 }
+
+/* ===== Neutral professional palette: warm grays + one navy accent + gold detail ===== */
+:root{--bg:#f4f4f2;--panel:#ffffff;--ink:#1b2232;--muted:#5f6573;--line:#e2e2dd;--accent:#1f3a68;--accent-soft:#eceff4;--tile:#eef0f3;--tile-ink:#1f3a68;--navy:#1b2a4a;--gold:#b8913a;--ok:#3c6e57;--foot-bg:#1b2a4a;--n:#1f3a68}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--panel:#191c22;--ink:#e6e8ec;--muted:#a0a6b2;--line:#2b2f37;--accent:#9db4dc;--accent-soft:#222833;--tile:#232833;--tile-ink:#c9d6ee;--navy:#1a2133;--gold:#c9a453;--ok:#7fb59b;--foot-bg:#14181f;--n:#9db4dc;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111317;--panel:#191c22;--ink:#e6e8ec;--muted:#a0a6b2;--line:#2b2f37;--accent:#9db4dc;--accent-soft:#222833;--tile:#232833;--tile-ink:#c9d6ee;--navy:#1a2133;--gold:#c9a453;--ok:#7fb59b;--foot-bg:#14181f;--n:#9db4dc;color-scheme:dark}
+/* every per-section / per-company / per-topic color collapses to the one accent */
+#p-overview,#p-experience,#p-projects,#p-writing,#p-certifications,#p-privacy,#p-terms{--c:var(--n)}
+[style*="--co"]{--co:var(--navy)!important;--co-ink:#fff!important}
+[style*="--rc"]{--rc:var(--n)!important}
+[style*="--g:"],.ag,.art{--g:var(--n)!important}
+[style*="--p:"],.pcard,.pil{--p:var(--n)!important}
+[style*="--c:"]{--c:var(--n)!important}
+.skill-groups>div,.highlights .chip{--k:var(--n)!important}
+/* flatter surfaces: no tinted gradients */
+.tabpanel>.panel{border-top:3px solid var(--n);background:var(--panel)}
+.tabpanel h2{color:var(--ink)}
+.tabpanel .sub,.tabpanel .sg,.tabpanel .eb,.ag .sub{color:var(--muted)!important}
+#p-experience .entry.co,#p-certifications .entry.co{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--n)}
+#p-experience .entry.co .logo,#p-certifications .entry.co .logo{background:var(--tile);color:var(--tile-ink);box-shadow:none}
+#p-certifications .entry.co h3{color:var(--ink)}
+.ag,.art,.pil,.pcard,.app,.proj,.nl,.bk{background:var(--panel)!important;border-color:var(--line)!important}
+.ag,.art,.pil,.pcard{border-top:3px solid var(--n)!important}
+.proj{border-top:3px solid var(--n)}
+.art .eb{color:var(--muted)!important}
+.ph-row h3,.pil h3{color:var(--ink)}
+.pic{background:var(--n)}
+.chip{background:var(--accent-soft);color:var(--ink)}
+.skill{background:var(--panel);border-color:var(--line);color:var(--ink)}
+.stat b,.count{color:var(--muted)!important}
+.tabpanel .status,.tabpanel .tag{background:var(--accent-soft);color:var(--accent)}
+.step,.step span{color:var(--accent)!important;border-color:var(--accent)!important}
+.cover{background:linear-gradient(160deg,#1b2a4a,#2b3f66)}
+.cover svg{stroke:#d9c08a}.cover b span{color:#d9c08a}
+.okbox{background:var(--accent-soft);border-color:var(--line)}
+.okbox svg,.notice svg{stroke:var(--ok)}
+.notice{border-left-color:var(--gold)}
+.pbanner{background:var(--navy);border-bottom:3px solid var(--gold)}
+.tabs{background:var(--navy);border-color:var(--navy)}
+.tabs a[aria-selected="true"]{background:#fff;color:var(--navy)}
+.lang{background:var(--navy)}
+.lang button[aria-pressed="true"]{background:var(--gold);color:#1b2232}
+.banner{border-bottom:3px solid var(--gold)}
+.btn.solid,button.btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
+.quote,.lead-q{border-left-color:var(--gold)}
+
+/* ===== Typography: classic serif headings, humanist sans text ===== */
+:root{--f-display:"Source Serif 4",Georgia,"Times New Roman",serif;--f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;--f-mono:"Source Sans 3","Segoe UI",system-ui,sans-serif}
+body{font-size:16px;line-height:1.6}
+h1,h2,.name,.tagline,.pbanner h2,.quote,.lead-q,.art h3{font-family:var(--f-display);letter-spacing:-.005em}
+h2{font-size:24px;font-weight:600}
+.name{font-size:clamp(30px,5vw,40px);font-weight:700}
+.tagline{font-weight:600;font-style:italic}
+h3{font-family:var(--f-body);font-weight:600}
+.mono{font-family:var(--f-body);font-size:14px;letter-spacing:0;color:var(--muted)}
+.email{font-family:var(--f-body);font-size:14.5px}
+.sub,.sg,.eb,.nl .label,.step{letter-spacing:.06em}
+.tabs a,.lang button,.btn{font-family:var(--f-body)}
+.quote{font-size:20px;font-style:italic;font-weight:500}
+.lead-q{font-size:20px;font-weight:500}
+.cover b{font-family:var(--f-display);text-transform:none;letter-spacing:0;font-size:16px}
 </style>
 
 </head>
