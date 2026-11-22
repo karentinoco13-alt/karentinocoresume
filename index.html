@@ -380,47 +380,37 @@ h3{font-family:var(--f-body);font-weight:600}
 #p-experience .entry.co .role::before,#p-experience .entry.co .role[style*="--rc"]::before{box-shadow:none!important}
 .btn{border-radius:6px}
 
-/* ===== Ivory & gold ===== */
-:root{--bg:#f8f3e8;--panel:#fffdf8;--ink:#2b2620;--muted:#6e6558;--line:#e7dcc6;--accent:#8a6a24;--accent-soft:#f3ead6;--tile:#f3ead6;--tile-ink:#7a5c1c;--navy:#2b2620;--gold:#c4a04c;--ok:#6f7a3c;--foot-bg:#2b2620;--foot-ink:#efe6d4;--foot-muted:#bfb39c;--n:#a8842f}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16130f;--panel:#1f1b16;--ink:#efe8da;--muted:#b3a893;--line:#3a3329;--accent:#d8b765;--accent-soft:#2b251c;--tile:#2b251c;--tile-ink:#e2c681;--navy:#16130f;--gold:#d2ae5c;--ok:#a9b46a;--foot-bg:#100e0b;--n:#d2ae5c;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#16130f;--panel:#1f1b16;--ink:#efe8da;--muted:#b3a893;--line:#3a3329;--accent:#d8b765;--accent-soft:#2b251c;--tile:#2b251c;--tile-ink:#e2c681;--navy:#16130f;--gold:#d2ae5c;--ok:#a9b46a;--foot-bg:#100e0b;--n:#d2ae5c;color-scheme:dark}
-/* ivory banner with gold rule */
-.banner{background:linear-gradient(160deg,#fbf6ea 0%,#f1e5c9 60%,#e9d7ad 100%)!important}
-.banner::before{background-image:linear-gradient(rgba(168,132,47,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(168,132,47,.10) 1px,transparent 1px)!important}
-.banner::after{background:linear-gradient(90deg,transparent,#c4a04c 40%,#e9d7ad 55%,#c4a04c 70%,transparent)!important;opacity:.7}
-.tagline{color:#3a2f1e!important}
-.avatar{border-color:var(--panel)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .banner{background:linear-gradient(160deg,#2a241b,#3a2f1e 60%,#4a3b22)!important}:root:not([data-theme="light"]) .tagline{color:#f3e6c6!important}}
-:root[data-theme="dark"] .banner{background:linear-gradient(160deg,#2a241b,#3a2f1e 60%,#4a3b22)!important}
-:root[data-theme="dark"] .tagline{color:#f3e6c6!important}
-/* light tab bar: ivory with gold underline */
-.tabs,.lang{background:var(--panel)!important;border:1px solid var(--line)!important}
-.tabs a,.lang button{color:var(--muted)!important}
-.tabs a:hover{background:var(--accent-soft)!important;color:var(--ink)!important}
-.tabs a[aria-selected="true"],.lang button[aria-pressed="true"]{color:var(--ink)!important;box-shadow:inset 0 -3px 0 var(--gold)!important}
-.tabbar{background:var(--bg)}
-.btn.solid,button.btn.solid{background:var(--accent)!important;border-color:var(--accent)!important;color:#fffdf8!important}
-.btn{border-color:var(--accent);color:var(--accent)}
-.cover{background:linear-gradient(160deg,#f1e5c9,#e3cf9f)!important;color:#3a2f1e!important}
-.cover svg{stroke:#8a6a24!important}.cover b{color:#3a2f1e}.cover b span{color:#8a6a24!important}
-.notice{border-left-color:var(--gold)}
-footer.site{border-top-color:var(--gold)}
-
-/* deeper ivory: less white */
-:root{--bg:#ebe0c8;--panel:#f8f1e1;--line:#d9caa8;--accent-soft:#efe3c6;--tile:#ecdfc0;--muted:#695f4f}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16130f;--panel:#1f1b16;--line:#3a3329;--accent-soft:#2b251c;--tile:#2b251c;--muted:#b3a893}}
-:root[data-theme="dark"]{--bg:#16130f;--panel:#1f1b16;--line:#3a3329;--accent-soft:#2b251c;--tile:#2b251c;--muted:#b3a893}
-.banner{background:linear-gradient(160deg,#f3e8cf 0%,#e6d3a6 60%,#d9bf85 100%)!important}
-.cover{background:linear-gradient(160deg,#ead9b0,#d8be84)!important}
-#fb-text{background:#fffaf0}
-
-/* true ivory: creamy off-white, not beige */
-:root{--bg:#f4efdc;--panel:#fcf9ee;--line:#e4dbbf;--accent-soft:#f3ecd6;--tile:#f1e9cf;--muted:#6a6252;--accent:#94721f;--gold:#c6a13f}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16130f;--panel:#1f1b16;--line:#3a3329;--accent-soft:#2b251c;--tile:#2b251c;--muted:#b3a893;--accent:#d8b765;--gold:#d2ae5c}}
-:root[data-theme="dark"]{--bg:#16130f;--panel:#1f1b16;--line:#3a3329;--accent-soft:#2b251c;--tile:#2b251c;--muted:#b3a893;--accent:#d8b765;--gold:#d2ae5c}
-.banner{background:linear-gradient(160deg,#fdfaf0 0%,#f5eed8 55%,#ece0bc 100%)!important}
-.cover{background:linear-gradient(160deg,#f8f2df,#ece0bc)!important}
-#fb-text{background:#fffdf6}
+/* ===== Wider harmonious palette: navy base + gold detail + muted jewel tones per section ===== */
+:root{--bg:#eeece6;--panel:#fbfaf6;--ink:#1e2330;--muted:#5e6270;--line:#dedbd2;--accent:#1f3a68;--accent-soft:#e8ebf1;--navy:#1f3a68;--gold:#c19a3b;--foot-bg:#1b2a4a;--n:#1f3a68;
+  --teal:#2a7a78;--blue:#3a63a8;--plum:#6d4a7c;--terra:#b0563f;--sage:#5d7b4d;--gold2:#a8842c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121418;--panel:#1a1d23;--ink:#e7e9ee;--muted:#a3a8b4;--line:#2c3039;--accent:#a9bfe6;--accent-soft:#222833;--navy:#1a2133;--gold:#d2ae5c;--foot-bg:#10131a;--n:#a9bfe6;
+  --teal:#6fc0bb;--blue:#8fb0ea;--plum:#c3a2d3;--terra:#e59a84;--sage:#a6c494;--gold2:#d9b865;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121418;--panel:#1a1d23;--ink:#e7e9ee;--muted:#a3a8b4;--line:#2c3039;--accent:#a9bfe6;--accent-soft:#222833;--navy:#1a2133;--gold:#d2ae5c;--foot-bg:#10131a;--n:#a9bfe6;
+  --teal:#6fc0bb;--blue:#8fb0ea;--plum:#c3a2d3;--terra:#e59a84;--sage:#a6c494;--gold2:#d9b865;color-scheme:dark}
+#p-overview{--n:var(--teal)} #p-experience{--n:var(--blue)} #p-projects{--n:var(--plum)}
+#p-writing{--n:var(--terra)} #p-certifications{--n:var(--sage)} #p-privacy{--n:var(--teal)} #p-terms{--n:var(--gold2)}
+/* section color shows on headings, edges, icons and dots */
+.tabpanel h2{color:var(--n)}
+.tabpanel .sub,.tabpanel .sg{color:var(--n)!important}
+#p-experience .entry.co .logo,#p-certifications .entry.co .logo{background:color-mix(in srgb,var(--n) 12%,var(--panel));color:var(--n)}
+.pic svg{stroke:var(--n)!important}
+/* hero badges: plain text, each with its own colored dot */
+.highlights .chip::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:8px;vertical-align:1px;background:var(--k)}
+.highlights .chip:nth-child(1){--k:var(--teal)!important}.highlights .chip:nth-child(2){--k:var(--blue)!important}.highlights .chip:nth-child(3){--k:var(--plum)!important}.highlights .chip:nth-child(4){--k:var(--sage)!important}.highlights .chip:nth-child(5){--k:var(--terra)!important}
+.highlights .chip:not(:last-child)::after{content:"";margin:0 8px}
+/* skill groups and article topics each get a color */
+.skill-groups>div:nth-child(1) .sg{color:var(--teal)!important}.skill-groups>div:nth-child(2) .sg{color:var(--plum)!important}.skill-groups>div:nth-child(3) .sg{color:var(--blue)!important}
+.agroups .ag:nth-child(6n+1){--g:var(--blue)!important}.agroups .ag:nth-child(6n+2){--g:var(--teal)!important}.agroups .ag:nth-child(6n+3){--g:var(--terra)!important}.agroups .ag:nth-child(6n+4){--g:var(--plum)!important}.agroups .ag:nth-child(6n+5){--g:var(--sage)!important}.agroups .ag:nth-child(6n+6){--g:var(--gold2)!important}
+.ag{border-top-color:var(--g)!important}.ag .sub{color:var(--g)!important}
+.arts .art:nth-child(6n+1){--g:var(--blue)!important}.arts .art:nth-child(6n+2){--g:var(--teal)!important}.arts .art:nth-child(6n+3){--g:var(--plum)!important}.arts .art:nth-child(6n+4){--g:var(--terra)!important}.arts .art:nth-child(6n+5){--g:var(--gold2)!important}.arts .art:nth-child(6n+6){--g:var(--sage)!important}
+.art{border-top-color:var(--g)!important}.art .eb{color:var(--g)!important}
+/* apps follow People / Process / Partners / Systems colors */
+.apps .app:nth-child(1){border-top:3px solid var(--teal)!important}.apps .app:nth-child(2){border-top:3px solid var(--gold2)!important}.apps .app:nth-child(3){border-top:3px solid var(--plum)!important}.apps .app:nth-child(4){border-top:3px solid var(--blue)!important}
+/* privacy cards in a rotation of the palette */
+.pgrid .pcard:nth-child(6n+1){--n:var(--teal)}.pgrid .pcard:nth-child(6n+2){--n:var(--blue)}.pgrid .pcard:nth-child(6n+3){--n:var(--terra)}.pgrid .pcard:nth-child(6n+4){--n:var(--sage)}.pgrid .pcard:nth-child(6n+5){--n:var(--gold2)}.pgrid .pcard:nth-child(6n+6){--n:var(--plum)}
+.pillars .pil:nth-child(1){--n:var(--teal)}.pillars .pil:nth-child(2){--n:var(--gold2)}.pillars .pil:nth-child(3){--n:var(--blue)}
+.pcard,.pil{border-top-color:var(--n)!important}.pcard .ph-row h3,.pil h3{color:var(--n)}
+.tabs a[aria-selected="true"]{color:#fff!important}
 </style>
 
 </head>
